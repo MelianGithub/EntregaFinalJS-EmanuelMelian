@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BoxIcon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <title>Bienvenidos a MundoGamingPC</title>
+</head>
+
+<body>
+    <header>
+        <div class="top__contenedor">
+            <div class="datos">
+                <p class="tel"><i class='bx bx-phone'></i> 09861200</p>
+                <p class="address"><i class='bx bx-location-plus'></i> Tala, Canelones</p>
+            </div>
+            <div class="iconos__redes">
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-instagram-alt'></i>
+                <i class='bx bxl-youtube'></i>
+            </div>
+        </div>
+        <hr>
+        <div class="segundo__contenedor">
+            <div class="logo"><a href="../index.html"><img src="../imagenes/logo1.png" alt=""></a></div>
+            <div class="buscador">
+                <input type="text" id="buscar" placeholder="Buscar Productos...">
+                <i class='bx bx-search-alt-2 lupa'></i>
+            </div>
+            <div class="carrito">
+                <i class='bx bx-user'></i>
+                <a href="../paginas/carrito.html"> <i class='bx bx-cart-alt' id="cart-icon"> <span
+                            id="numerito"></span></i></a>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <ul class="menu__desplegable">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="">Crea Tu PC</a></li>
+                <li class="productos"><a href="../paginas/productos.html">Productos</a>
+                    <ul class="menu__vertical">
+                        <li><a href="">Laptop</a></li>
+                        <li><a href="">Monitores</a></li>
+                        <li><a href="">Graficas</a></li>
+                        <li><a href="">Accesorios</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main__container">
+            <aside class="aside__productos">
+                <h2>Filtros</h2>
+                <div>
+                    <h3>Categoria</h3>
+                    <ul class="menu__filter">
+                        <li>
+                            <button id="laptop" class="botones__categorias">Laptops</button>
+                        </li>
+                        <li>
+                            <button id="monitor" class="botones__categorias">Monitores</button>
+                        </li>
+                        <li>
+                            <button id="grafica" class="botones__categorias">Graficas</button>
+                        </li>
+                        <li>
+                            <button id="accesorios" class="botones__categorias">Accesorios</button>
+                        </li>
+                    </ul>
+                    <br>
+                    <h3>Marca</h3>
+                    <ul class="menu__filter">
+                        <li><button id="Acer" class="botones__categorias">Acer</button></li>
+                        <li><button id="Asus" class="botones__categorias">Asus</button></li>
+                        <li><button id="Lenovo" class="botones__categorias">Lenovo</button></li>
+                        <li><button id="MSI" class="botones__categorias">MSI</button></li>
+                        <li><button id="Dell" class="botones__categorias">Dell</button></li>
+                    </ul>
+                    <br>
+                    <h3>CPU</h3>
+                    <ul class="menu__filter">
+                        <li><button id="INTEL" class="botones__categorias">INTEL</button></li>
+                        <li><button id="AMD" class="botones__categorias">AMD</button></li>
+                    </ul>
+                    <br>
+                    <h3>Precio</h3>
+                    <ul class="menu__filter">
+                        <li><button id="rango1" class="botones__rango">$0 to $500</button></li>
+                        <li><button id="rango2" class="botones__rango">$501 to $1000</button></li>
+                        <li><button id="rango3" class="botones__rango">$1001 to 1500</button></li>
+                        <li><button id="rango4" class="botones__rango">$1501 to $2000</button></li>
+                        <li><button id="rango5" class="botones__rango">$2001 to $4000</button></li>
+                        
+                    </ul>
+                </div>
+            </aside>
+
+            <div id="resultados">
+                <div class="resOrden">
+                    <div class="resultado__title">
+                        <h4>Resultados:</h4>
+                    </div>
+
+                    <div class="botoFiltro">
+                        <h4>Ordenar por:</h4>
+                        <select class="ordenar" type="button">
+                            <option value="default"></option>
+                            <option id="mayorAmenor" value="mayorAmenor">Precio mayor a menor</option>
+                            <option value="menorAmayor">Precio menor a mayor</option>
+                            <option value="recomendados">Recomendados</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="filtercard__container">
+                    <div id="filter">
+                       <button id="este">AESTE</button>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <div class="newsletter">
+                <p><i class='bx bx-envelope'></i>Suscribete a nuestro newsletter</p>
+                <input class="in__correo" type="text" placeholder="Ingresa tu email" name="" id="">
+                <input type="submit" value="SUSCRIBETE" class="submit">
+            </div>
+            <div class="masInfo">
+                <div class="ayuda">
+                    <h3>Ayuda</h3>
+                    <p>Contacto</p>
+                    <p>Terminos y condiciones</p>
+                </div>
+                <div class="empresas">
+                    <h3>Empresas</h3>
+                    <p>Nosotros</p>
+                    <p>Contacto</p>
+                    <p>Tienda</p>
+                </div>
+                <div class="compra">
+                    <h3>Comprar</h3>
+                    <p>Como comprar</p>
+                    <p>Terminos y condiciones</p>
+                    <p>Preguntas frecuentes</p>
+                </div>
+                <div class="seguinos">
+                    <h3>Seguinos</h3>
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bxl-instagram-alt'></i>
+                    <i class='bx bxl-youtube'></i>
+                </div>
+            </div>
+            <hr>
+            <div class="tarjetas">
+                <img src="../imagenes/Iconos/abitab.svg" alt="">
+                <img src="../imagenes/Iconos/oca.svg" alt="">
+                <img src="../imagenes/Iconos/redpagos.svg" alt="">
+                <img src="../imagenes/Iconos/visa.svg" alt="">
+                <img src="../imagenes/Iconos/scotiabank.svg" alt="">
+                <img src="../imagenes/Iconos/Banco_Itaú_logo.svg" alt="" style="width: 20px;">
+            </div>
+            <div class="copyR">
+                <p>Esta pagina fue creada por Emanuel Melian &copy;</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../app.js"></script>
+    <script src="../filtro.js"></script>
+
+
+
+</body>
+
+</html>
