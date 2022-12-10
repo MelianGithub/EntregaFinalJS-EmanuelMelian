@@ -1,50 +1,69 @@
 const filter = document.querySelector("#filter");
 const botonesCategorias = document.querySelectorAll(".botones__categorias");
-const mayorAmenor = document.querySelector("#este");
+const selectOrder = document.querySelector("#selectOrder");
+const priceMax = document.querySelector("#my-range");
 
-botonesCategorias.forEach(boton => {
+
+
+
+
+botonesCategorias.forEach((boton) => {
     boton.addEventListener("click", (e) => {
+        const buscados = productos.filter(
+            (producto) =>
+                producto.cpu === e.currentTarget.id ||
+                producto.cat === e.currentTarget.id ||
+                producto.marca === e.currentTarget.id
+        );
+
+        cargarProductosFilter(buscados);
+        filtrarPrecio(buscados);
 
 
-        const buscar = productos.filter(producto => producto.cpu === e.currentTarget.id || producto.cat === e.currentTarget.id || producto.marca === e.currentTarget.id);
+        selectOrder.addEventListener("change", () => {
 
-        cargarProductosFilter(buscar);
-    }
+            const ordenadoPorPrecio = buscados.sort((a, b) => {
+                if (a.precio < b.precio) {
+                    return 1
+                } else if (a.precio > b.precio) {
+                    return -1
+                } else {
+                    return 0
+                }
 
-    )
+            });
+
+
+
+            let selectedOption = selectOrder.options[selectOrder.selectedIndex];
+
+            if (selectedOption.value == 1) {
+                console.log('Selected option: ' + selectedOption.value);
+                cargarProductosFilter(buscados);
+            } else if (selectedOption.value == 2) {
+                cargarProductosFilter(buscados.reverse());
+            }
+
+        });
+
+    });
+
 });
 
 
-
-const buscarOrdenado = buscar.sort((a, b) => a.precio - b.precio);
-console.log(buscarOrdenado)
-
-// ordenar por precio
-
-//  buscar.sort((a, b) => {
-//         return a.precio - b.precio;
-//     });
-
-
-
-
-
-
-
 // FILTRAR RANGO PRECIOS
-// const botonesRango = document.querySelectorAll(".botones__rango");
-// const rango1 = productos.precio > 100;
-// console.log(rango1);
 
-// botonesRango.forEach(boton => {
-//     boton.addEventListener("click", (e) => {
-
-//         const rango = productos.filter(producto => producto. == e.currentTarget.id);
-//         cargarProductosFilter(rango);
-//     })
-
-// });
-
+function filtrarPrecio(arrayPrecios) {
+    priceMax.max = "9000";
+    priceMax.addEventListener("click", (e) => {
+        const precioMaximo = arrayPrecios.filter(
+            (producto) =>
+                producto.precio <= e.currentTarget.value
+        );
+        console.log(e.currentTarget.value)
+        cargarProductosFilter(precioMaximo);
+    })
+}
 
 function cargarProductosFilter(arraryProductos) {
     filter.innerHTML = '';
@@ -69,4 +88,3 @@ function cargarProductosFilter(arraryProductos) {
     }
     actualizarBotonesAgregar();
 };
-

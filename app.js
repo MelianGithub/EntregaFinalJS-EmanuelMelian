@@ -247,7 +247,69 @@ let productos = [
     stock: 4,
     descripcion: "Con su diseño sin bordes, este monitor te brinda la mejor experiencia de juego.",
     img: ".jpg"
-}
+},
+// GRAFICAS
+{
+  cat: "grafica",
+  id: 10,
+  marca: "NVIDIA",
+  modelo: "RTX 2060",
+  precio: 700,
+  stock: 3,
+  descripcion: "Ideal para gaming",
+  img: ".jpg"
+},
+{
+  cat: "grafica",
+  id: 10,
+  marca: "NVIDIA",
+  modelo: "RTX 2070",
+  precio: 800,
+  stock: 4,
+  descripcion: "Ideal para gaming",
+  img: ".jpg"
+},
+{
+  cat: "grafica",
+  id: 10,
+  marca: "NVIDIA",
+  modelo: "RTX 2080",
+  precio: 900,
+  stock: 1,
+  descripcion: "Ideal para gaming",
+  img: ".jpg"
+},
+{
+  cat: "grafica",
+  id: 10,
+  marca: "RADEON",
+  modelo: "RX 6700 XT",
+  precio: 1050,
+  stock: 1,
+  descripcion: "Ideal para gaming",
+  img: ".jpg"
+},
+{
+  cat: "grafica",
+  id: 10,
+  marca: "RADEON",
+  modelo: "RX 6400",
+  precio: 900,
+  stock: 6,
+  descripcion: "Ideal para gaming",
+  img: ".jpg"
+},
+{
+  cat: "grafica",
+  id: 10,
+  marca: "RADEON",
+  modelo: "RX 6500",
+  precio: 750,
+  stock: 12,
+  descripcion: "Ideal para gaming",
+  img: ".jpg"
+},
+
 ];
 
 // const buscarItemIndex = document.querySelector("#buscarIndex");

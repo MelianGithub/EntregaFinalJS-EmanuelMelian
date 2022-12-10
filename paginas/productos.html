@@ -94,14 +94,16 @@
                     </ul>
                     <br>
                     <h3>Precio</h3>
-                    <ul class="menu__filter">
+                    <label for="my-range">Price Range:</label>
+                    <input type="range" rangeInput.min=0 rangeInput.max=1000 name="price" id="my-range">
+                    <p id="currentInput"></p>
+                    <!-- <ul class="menu__filter">
                         <li><button id="rango1" class="botones__rango">$0 to $500</button></li>
                         <li><button id="rango2" class="botones__rango">$501 to $1000</button></li>
                         <li><button id="rango3" class="botones__rango">$1001 to 1500</button></li>
                         <li><button id="rango4" class="botones__rango">$1501 to $2000</button></li>
                         <li><button id="rango5" class="botones__rango">$2001 to $4000</button></li>
-                        
-                    </ul>
+                    </ul> -->
                 </div>
             </aside>
 
@@ -113,22 +115,23 @@
 
                     <div class="botoFiltro">
                         <h4>Ordenar por:</h4>
-                        <select class="ordenar" type="button">
+                        <select id="selectOrder" class="ordenar" type="button">
                             <option value="default"></option>
-                            <option id="mayorAmenor" value="mayorAmenor">Precio mayor a menor</option>
-                            <option value="menorAmayor">Precio menor a mayor</option>
-                            <option value="recomendados">Recomendados</option>
+                            <option id="option1" value="1">Precio mayor a menor</option>
+                            <option id="option2" value="2">Precio menor a mayor</option>
+                           
                         </select>
                     </div>
                 </div>
 
                 <div id="filtercard__container">
                     <div id="filter">
-                       <button id="este">AESTE</button>
                     </div>
                 </div>
             </div>
-            </section>
+
+        </div>
+        </section>
         </div>
     </main>
     <footer>
