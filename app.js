@@ -13,7 +13,7 @@ let productos = [
     stock: 5,
     descripcion: "Super Gaming Pc perfecta para jugar todos los juegos de pc del momento",
     img: "../imagenes/laptoplenovo1.jpg",
-    
+
 
   },
   {
@@ -187,7 +187,7 @@ let productos = [
     stock: 4,
     descripcion: "Con su diseño sin bordes, este monitor te brinda la mejor experiencia de juego.",
     img: ".jpg"
-},
+  },
   {
     cat: "monitor",
     id: 10,
@@ -197,7 +197,7 @@ let productos = [
     stock: 4,
     descripcion: "Con su diseño sin bordes, este monitor te brinda la mejor experiencia de juego.",
     img: ".jpg"
-},
+  },
   {
     cat: "monitor",
     id: 10,
@@ -207,7 +207,7 @@ let productos = [
     stock: 4,
     descripcion: "Con su diseño sin bordes, este monitor te brinda la mejor experiencia de juego.",
     img: ".jpg"
-},
+  },
   {
     cat: "monitor",
     id: 10,
@@ -217,7 +217,7 @@ let productos = [
     stock: 4,
     descripcion: "Con su diseño sin bordes, este monitor te brinda la mejor experiencia de juego.",
     img: ".jpg"
-},
+  },
   {
     cat: "monitor",
     id: 10,
@@ -227,7 +227,7 @@ let productos = [
     stock: 4,
     descripcion: "Con su diseño sin bordes, este monitor te brinda la mejor experiencia de juego.",
     img: ".jpg"
-},
+  },
   {
     cat: "monitor",
     id: 10,
@@ -237,7 +237,7 @@ let productos = [
     stock: 4,
     descripcion: "Con su diseño sin bordes, este monitor te brinda la mejor experiencia de juego.",
     img: ".jpg"
-},
+  },
   {
     cat: "monitor",
     id: 10,
@@ -247,68 +247,68 @@ let productos = [
     stock: 4,
     descripcion: "Con su diseño sin bordes, este monitor te brinda la mejor experiencia de juego.",
     img: ".jpg"
-},
-// GRAFICAS
-{
-  cat: "grafica",
-  id: 10,
-  marca: "NVIDIA",
-  modelo: "RTX 2060",
-  precio: 700,
-  stock: 3,
-  descripcion: "Ideal para gaming",
-  img: ".jpg"
-},
-{
-  cat: "grafica",
-  id: 10,
-  marca: "NVIDIA",
-  modelo: "RTX 2070",
-  precio: 800,
-  stock: 4,
-  descripcion: "Ideal para gaming",
-  img: ".jpg"
-},
-{
-  cat: "grafica",
-  id: 10,
-  marca: "NVIDIA",
-  modelo: "RTX 2080",
-  precio: 900,
-  stock: 1,
-  descripcion: "Ideal para gaming",
-  img: ".jpg"
-},
-{
-  cat: "grafica",
-  id: 10,
-  marca: "RADEON",
-  modelo: "RX 6700 XT",
-  precio: 1050,
-  stock: 1,
-  descripcion: "Ideal para gaming",
-  img: ".jpg"
-},
-{
-  cat: "grafica",
-  id: 10,
-  marca: "RADEON",
-  modelo: "RX 6400",
-  precio: 900,
-  stock: 6,
-  descripcion: "Ideal para gaming",
-  img: ".jpg"
-},
-{
-  cat: "grafica",
-  id: 10,
-  marca: "RADEON",
-  modelo: "RX 6500",
-  precio: 750,
-  stock: 12,
-  descripcion: "Ideal para gaming",
-  img: ".jpg"
-},
+  },
+  // GRAFICAS
+  {
+    cat: "grafica",
+    id: 10,
+    marca: "NVIDIA",
+    modelo: "RTX 2060",
+    precio: 700,
+    stock: 3,
+    descripcion: "Ideal para gaming",
+    img: ".jpg"
+  },
+  {
+    cat: "grafica",
+    id: 10,
+    marca: "NVIDIA",
+    modelo: "RTX 2070",
+    precio: 800,
+    stock: 4,
+    descripcion: "Ideal para gaming",
+    img: ".jpg"
+  },
+  {
+    cat: "grafica",
+    id: 10,
+    marca: "NVIDIA",
+    modelo: "RTX 2080",
+    precio: 900,
+    stock: 1,
+    descripcion: "Ideal para gaming",
+    img: ".jpg"
+  },
+  {
+    cat: "grafica",
+    id: 10,
+    marca: "RADEON",
+    modelo: "RX 6700 XT",
+    precio: 1050,
+    stock: 1,
+    descripcion: "Ideal para gaming",
+    img: ".jpg"
+  },
+  {
+    cat: "grafica",
+    id: 10,
+    marca: "RADEON",
+    modelo: "RX 6400",
+    precio: 900,
+    stock: 6,
+    descripcion: "Ideal para gaming",
+    img: ".jpg"
+  },
+  {
+    cat: "grafica",
+    id: 10,
+    marca: "RADEON",
+    modelo: "RX 6500",
+    precio: 750,
+    stock: 12,
+    descripcion: "Ideal para gaming",
+    img: ".jpg"
+  },
 
 ];
 
@@ -329,9 +329,9 @@ let productos = [
 
 
 // renderizar();
-function renderizar() {
-  let contenedorProductos = document.getElementById("contenedorProductos");
+const contenedorProductos = document.querySelector("#contenedorProductos");
 
+function renderizar() {
   for (const producto of productos) {
 
     let unidades = "Agregar"
@@ -359,15 +359,12 @@ const filtercard__container = document.querySelector("#filtercard__container");
 
 function cargarProductos(arraryProductos) {
   filtercard__container.innerHTML = '';
-
   for (const producto of arraryProductos) {
-
 
     let unidades = "Agregar"
     if (producto.stock <= 0) {
       unidades = "Sin Stock"
     }
-
     const mostrarProductos = document.createElement("div");
     mostrarProductos.className = "card";
     mostrarProductos.innerHTML = `
@@ -398,8 +395,10 @@ buscarItem.addEventListener("change", buscadorItem);
 
 function buscadorItem() {
   const buscar = productos.filter(producto => {
-    return producto.stock > 0 && producto.marca.toLocaleLowerCase() === buscarItem.value
-      || producto.modelo.toLocaleLowerCase() === buscarItem.value;
+    return producto.stock > 0
+      && producto.marca.toLocaleLowerCase() === buscarItem.value
+      || producto.modelo.toLocaleLowerCase() === buscarItem.value
+      || producto.cat.toLocaleLowerCase() === buscarItem.value;
   });
 
   buscar.length > 0 ? cargarProductos(buscar) : error(); // ESTO ES LO MISMO QUE UN IF ELSE
