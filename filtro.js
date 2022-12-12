@@ -2,12 +2,7 @@ const filter = document.querySelector("#filter");
 const botonesCategorias = document.querySelectorAll(".botones__categorias");
 const selectOrder = document.querySelector("#selectOrder");
 const priceMax = document.querySelector("#my-range");
-
-// const toa = document.querySelectorAll(".producto-agregar");
-// toa.addEventListener("click", () => {
-
-// })
-
+const linkLaptop = document.querySelector("#linkLaptop")
 
 
 function cargarProductosFilter(arraryProductos) {
@@ -56,6 +51,7 @@ botonesCategorias.forEach((boton) => {
     });
 
 });
+
 
 function ordenadoPor(array) {
     selectOrder.addEventListener("change", () => {
