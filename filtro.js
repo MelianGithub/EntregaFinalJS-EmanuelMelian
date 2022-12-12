@@ -3,6 +3,13 @@ const botonesCategorias = document.querySelectorAll(".botones__categorias");
 const selectOrder = document.querySelector("#selectOrder");
 const priceMax = document.querySelector("#my-range");
 
+// const toa = document.querySelectorAll(".producto-agregar");
+// toa.addEventListener("click", () => {
+
+// })
+
+
+
 function cargarProductosFilter(arraryProductos) {
     filter.innerHTML = '';
 
@@ -85,5 +92,3 @@ function filtrarPrecio(arrayPrecios) {
         cargarProductosFilter(precioMaximo);
     })
 }
-
-

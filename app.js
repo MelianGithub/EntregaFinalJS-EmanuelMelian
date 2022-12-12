@@ -13,8 +13,6 @@ let productos = [
     stock: 5,
     descripcion: "Super Gaming Pc perfecta para jugar todos los juegos de pc del momento",
     img: "../imagenes/laptoplenovo1.jpg",
-
-
   },
   {
     cat: "laptop",
@@ -429,6 +427,7 @@ function agregarAlCarrito(e) {
     productosEnCarrito.push(productoAgregado);
   }
   actualizarNumerito();
+  toa();
 
   // LOCAL STORAGE
   localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
@@ -440,6 +439,7 @@ const numerito = document.querySelector("#numerito")
 function actualizarNumerito() {
   let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
   numerito.innerText = nuevoNumerito;
+  
 }
 
 // ------------------
@@ -452,4 +452,20 @@ if (productosEnCarritoLS) {
 } else {
   productosEnCarrito = [];
 }
+// Toastify Notifications 
 
+function toa() {
+  Toastify({
+      text: "Agregaste un producto al carrito",
+      duration: 1000,
+      newWindow: true,
+      close: true,
+      gravity: "top", // `top` or `bottom`
+      position: "right", // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+        background: "linear-gradient(to right, #00b09b, #96c93d)",
+      },
+      onClick: function(){} // Callback after click
+    }).showToast();
+}
