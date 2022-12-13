@@ -11,7 +11,7 @@
         "precio": 2000,
         "stock": 5,
         "descripcion": "Super Gaming Pc perfecta para jugar todos los juegos de pc del momento",
-        " img": "../imagenes/laptoplenovo1.jpg"
+        "img": "../imagenes/laptoplenovo1.jpg"
     },
     {
         "cat": "laptop",
@@ -175,7 +175,8 @@
         "precio": 269,
         "stock": 4,
         "descripcion": "Con su diseño sin bordes, este monitor te brinda la mejor experiencia de juego.",
-        "img": ".jpg"
+        "img": ".jpg",
+        "cpu": "N/A"
     },
     {
         "cat": "monitor",
@@ -185,7 +186,8 @@
         "precio": 119,
         "stock": 4,
         "descripcion": "Con su diseño sin bordes, este monitor te brinda la mejor experiencia de juego.",
-        "img": ".jpg"
+        "img": ".jpg",
+        "cpu": "N/A"
     },
     {
         "cat": "monitor",
@@ -195,7 +197,8 @@
         "precio": 300,
         "stock": 4,
         "descripcion": "Con su diseño sin bordes, este monitor te brinda la mejor experiencia de juego.",
-        "img": ".jpg"
+        "img": ".jpg",
+        "cpu": "N/A"
     },
     {
         "cat": "monitor",
@@ -205,7 +208,8 @@
         "precio": 269,
         "stock": 4,
         "descripcion": "Con su diseño sin bordes, este monitor te brinda la mejor experiencia de juego.",
-        "img": ".jpg"
+        "img": ".jpg",
+        "cpu": "N/A"
     },
     {
         "cat": "monitor",
@@ -215,7 +219,8 @@
         "precio": 249,
         "stock": 4,
         "descripcion": "Con su diseño sin bordes, este monitor te brinda la mejor experiencia de juego.",
-        "img": ".jpg"
+        "img": ".jpg",
+        "cpu": "N/A"
     },
     {
         "cat": "monitor",
@@ -225,7 +230,8 @@
         "precio": 300,
         "stock": 4,
         "descripcion": "Con su diseño sin bordes, este monitor te brinda la mejor experiencia de juego.",
-        "img": ".jpg"
+        "img": ".jpg",
+        "cpu": "N/A"
     },
     {
         "cat": "monitor",
@@ -235,7 +241,8 @@
         "precio": 500,
         "stock": 4,
         "descripcion": "Con su diseño sin bordes, este monitor te brinda la mejor experiencia de juego.",
-        "img": ".jpg"
+        "img": ".jpg",
+        "cpu": "N/A"
     },
     {
         "cat": "grafica",
@@ -245,7 +252,8 @@
         "precio": 700,
         "stock": 3,
         "descripcion": "Ideal para gaming",
-        "img": ".jpg"
+        "img": ".jpg",
+        "cpu": "N/A"
     },
     {
         "cat": "grafica",
@@ -255,7 +263,8 @@
         "precio": 800,
         "stock": 4,
         "descripcion": "Ideal para gaming",
-        "img": ".jpg"
+        "img": ".jpg",
+        "cpu": "N/A"
     },
     {
         "cat": "grafica",
@@ -265,7 +274,8 @@
         "precio": 900,
         "stock": 1,
         "descripcion": "Ideal para gaming",
-        "img": ".jpg"
+        "img": ".jpg",
+        "cpu": "N/A"
     },
     {
         "cat": "grafica",
@@ -275,7 +285,8 @@
         "precio": 1050,
         "stock": 1,
         "descripcion": "Ideal para gaming",
-        "img": ".jpg"
+        "img": ".jpg",
+        "cpu": "N/A"
     },
     {
         "cat": "grafica",
@@ -285,7 +296,8 @@
         "precio": 900,
         "stock": 6,
         "descripcion": "Ideal para gaming",
-        "img": ".jpg"
+        "img": ".jpg",
+        "cpu": "N/A"
     },
     {
         "cat": "grafica",
@@ -295,7 +307,8 @@
         "precio": 750,
         "stock": 12,
         "descripcion": "Ideal para gaming",
-        "img": ".jpg"
+        "img": ".jpg",
+        "cpu": "N/A"
     },
     {
         "cat": "accesorio",
@@ -304,33 +317,37 @@
         "precio": 50,
         "stock": 3,
         "descripcion": "conector vga vga",
-        "img": ".jpg"
+        "img": ".jpg",
+        "cpu": "N/A"
     },
     {
-        "cat": "accesorio",
+        "cat": "accesorios",
         "id": 10,
         "marca": "RADEON",
         "precio": 40,
         "stock": 7,
         "descripcion": "conector HDMI",
-        "img": ".jpg"
+        "img": ".jpg",
+        "cpu": "N/A"
     },
     {
-        "cat": "accesorio",
+        "cat": "accesorios",
         "id": 10,
         "marca": "RADEON",
         "precio": 40,
         "stock": 7,
         "descripcion": "conector HDMI",
-        "img": ".jpg"
+        "img": ".jpg",
+        "cpu": "N/A"
     },
     {
-        "cat": "accesorio",
+        "cat": "accesorios",
         "id": 10,
         "marca": "RADEON",
         "precio": 40,
         "stock": 7,
         "descripcion": "conector HDMI",
-        "img": ".jpg"
+        "img": ".jpg",
+        "cpu": "N/A"
     }
 ]
