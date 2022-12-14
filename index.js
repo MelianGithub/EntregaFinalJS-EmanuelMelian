@@ -22,7 +22,7 @@ function cargarOfertas(arrayProductos) {
         const ofertas = document.createElement("div");
         ofertas.className = "card";
         ofertas.innerHTML = `
-  <img src=${producto.img} class="card__img">
+  <img src=${producto.imgindex} class="card__img">
   <h3>${producto.marca}</h3>
   <p class = "text__card"></p>
   <h4>$${producto.precio}</h4>

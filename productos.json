@@ -12,6 +12,7 @@
         "stock": 5,
         "descripcion": "Super Gaming Pc perfecta para jugar todos los juegos de pc del momento",
         "img": "../imagenes/laptoplenovo1.jpg",
+        "imgindex":"./imagenes/laptoplenovo1.jpg",
         "oferta": true
     },
     {
@@ -27,6 +28,7 @@
         "stock": 5,
         "descripcion": "Super Gaming Pc perfecta para jugar todos los juegos de pc del momento",
         "img": "../imagenes/laptoplenovo1.jpg",
+        "imgindex":"./imagenes/laptoplenovo1.jpg",
         "oferta": true
     },
     {
@@ -57,6 +59,7 @@
         "stock": 10,
         "descripcion": "Super Gaming Pc perfecta para jugar todos los juegos de pc del momento",
         "img": "../imagenes/laptop23.jpg",
+        "imgindex":"./imagenes/laptop23.jpg",
         "oferta": true
     },
     {
@@ -200,6 +203,7 @@
         "stock": 4,
         "descripcion": "Con su diseño sin bordes, este monitor te brinda la mejor experiencia de juego.",
         "img": "../imagenes/monitorLG.jpg",
+        "imgindex":"./imagenes/monitorLG.jpg",
         "cpu": "N/A",
         "oferta": true
     },
@@ -236,6 +240,7 @@
         "stock": 3,
         "descripcion": "Ideal para gaming",
         "img": "../imagenes/nvidiartx2060.jpg",
+        "imgindex":"./imagenes/nvidiartx2060.jpg",
         "cpu": "N/A",
         "oferta": true
     },
@@ -296,6 +301,7 @@
         "stock": 12,
         "descripcion": "Ideal para gaming",
         "img": "../imagenes/Radeonrx550.jpg",
+        "imgindex":"./imagenes/Radeonrx550.jpg",
         "cpu": "N/A",
         "oferta": true
     },
@@ -309,6 +315,7 @@
         "stock": 7,
         "descripcion": "Teclado Rgba",
         "img": "../imagenes/teclado.jpg",
+        "imgindex":"./imagenes/teclado.jpg",
         "cpu": "N/A",
         "oferta": true
     },
@@ -332,6 +339,7 @@
         "stock": 7,
         "descripcion": "Mouse gamer",
         "img": "../imagenes/mouse.jpg",
+        "imgindex":"./imagenes/mouse.jpg",
         "cpu": "N/A",
         "oferta": true
     }
