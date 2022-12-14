@@ -60,12 +60,22 @@ header {
 .logo img {
     width: 200px;
     padding: 10px;
+    transition: all 1s;
 }
+
+.logo img:hover {
+    transform: scale(1.2);
+}
+
 
 .tel {
     margin-right: 20px;
 }
 
+i {
+    cursor: pointer;
+    font-size: 1.3rem;
+}
 
 /* Menu Nav */
 .nav {
@@ -74,17 +84,26 @@ header {
     color: white;
 }
 
-.menu__desplegable {
+.menu__desplegable{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style: none;
+    
+}
+
+.menu__desplegable>li{
     padding: 10px;
 }
 
-.menu__desplegable>li>a {
+.menu__desplegable a {
     text-decoration: none;
+    font-size: 1rem;
     color: #fff;
+}
 
+.menu__desplegable li:hover{
+    background-color: #7d96ae;
 }
 
 .menu__vertical {
@@ -94,6 +113,8 @@ header {
     list-style: none;
     width: 200px;
     color: black;
+    margin-top: 10px;
+    margin-left: -10px;
 }
 
 .menu__desplegable li:hover .menu__vertical {
@@ -103,13 +124,18 @@ header {
 .menu__vertical li a {
     display: block;
     color: white;
-    padding: 15px;
+    padding: 10px;
     background-color: #003E77;
+    
+    
 }
+
 .menu__vertical li a:hover {
     background-color: #bbb;
     color: white;
 }
+
+
 
 /* Contenido main */
 .main__container {
@@ -282,7 +308,6 @@ footer {
 }
 
 .footer__container {
-
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -356,7 +381,7 @@ footer {
 
 .menu__filter li {
     list-style: none;
-    cursor: pointer;
+    
 }
 
 .menu__filter li:hover {
@@ -385,7 +410,6 @@ footer {
 
 #filtercard__container {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -436,14 +460,16 @@ footer {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 10px;
-}.seguir__comprando button {
+}
+
+.seguir__comprando button {
     background-color: #003E77;
     color: #EEEEEE;
     padding: 10px;
     font-weight: bold;
 }
 
-.sin-stock{
+.sin-stock {
     color: red;
     cursor: not-allowed;
 }
@@ -452,7 +478,7 @@ footer {
     display: none;
 }
 
-#filter{
+#filter {
     display: flex;
     flex-wrap: wrap;
 }

@@ -7,8 +7,13 @@ fetch('../productos.json')
     const selectOrder = document.querySelector("#selectOrder");
     const priceMax = document.querySelector("#my-range");
     const linkLaptop = document.querySelector("#linkLaptop")
+    const currentInput = document.querySelector("#my-range")
 
+    currentInput.addEventListener("click", () => {
+      mostrarValor.innerHTML = '';
+      mostrarValor.append("$" + currentInput.value)
 
+    })
 
 
     function cargarProductos(arraryProductos) {
@@ -24,7 +29,7 @@ fetch('../productos.json')
         mostrarProductos.innerHTML = `
                 <img src=${producto.img} class="card__img">
                 <h3>${producto.marca}</h3>
-                <p class = "text__card">${producto.descripcion} </p>
+                <p class = "text__card"></p>
                 <h4>$${producto.precio}</h4>
                 <button class= "producto-agregar" id="${producto.id}">${unidades}</button>
   `;
@@ -176,4 +181,5 @@ fetch('../productos.json')
     buscarCat(productos);
 
   })
+
 

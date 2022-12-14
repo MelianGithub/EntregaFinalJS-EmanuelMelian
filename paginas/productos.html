@@ -34,7 +34,7 @@
         <div class="segundo__contenedor">
             <div class="logo"><a href="../index.html"><img src="../imagenes/logo1.png" alt=""></a></div>
             <div class="buscador">
-                <input type="text" id="buscar" placeholder="Buscar Productos...">
+                <input type="search" id="buscar" placeholder="Buscar Productos...">
                 <i class='bx bx-search-alt-2 lupa'></i>
             </div>
             <div class="carrito">
@@ -69,38 +69,67 @@
                     <h3>Categoria</h3>
                     <ul class="menu__filter">
                         <li>
-                            <button id="laptop" class="botones__categorias">Laptops</button>
+                            <input type="checkbox" id="laptop" class="botones__categorias"> </input><label
+                            for="laptop"> Laptops</label>
                         </li>
                         <li>
-                            <button id="monitor" class="botones__categorias">Monitores</button>
+                            <input type="checkbox" id="monitor" class="botones__categorias"> </input><label
+                            for="monitor"> Monitores</label>
                         </li>
                         <li>
-                            <button id="grafica" class="botones__categorias">Graficas</button>
+                            <input type="checkbox" id="grafica" class="botones__categorias"> </input><label
+                            for="grafica"> Graficas</label>
                         </li>
                         <li>
-                            <button id="accesorios" class="botones__categorias">Accesorios</button>
+                            <input type="checkbox" id="accesorios" class="botones__categorias"> </input><label
+                            for="accesorios"> Accesorios</label>
                         </li>
                     </ul>
                     <br>
                     <h3>Marca</h3>
                     <ul class="menu__filter">
-                        <li><button id="Acer" class="botones__categorias">Acer</button></li>
-                        <li><button id="Asus" class="botones__categorias">Asus</button></li>
-                        <li><button id="Lenovo" class="botones__categorias">Lenovo</button></li>
-                        <li><button id="MSI" class="botones__categorias">MSI</button></li>
-                        <li><button id="Dell" class="botones__categorias">Dell</button></li>
+                        <li>
+                            <input type="checkbox" id="Acer" class="botones__categorias"></input><label
+                            for="Acer"> Acer</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="Asus" class="botones__categorias"> </input><label
+                            for="Asus"> Asus</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="Lenovo" class="botones__categorias"></input><label
+                            for="Lenovo"> Lenovo</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="MSI" class="botones__categorias"></input><label
+                            for="MSI"> MSI</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="Dell" class="botones__categorias"> </input><label
+                            for="Dell"> Dell</label>
+                        </li>
                     </ul>
                     <br>
                     <h3>CPU</h3>
                     <ul class="menu__filter">
-                        <li><button id="INTEL" class="botones__categorias">INTEL</button></li>
-                        <li><button id="AMD" class="botones__categorias">AMD</button></li>
+                        <li>
+                            <input type="checkbox" id="INTEL" class="botones__categorias"></input><label
+                                for="INTEL"> Intel</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="AMD" class="botones__categorias"></input></input><label
+                            for="AMD"> Amd</label>
+                        </li>
                     </ul>
                     <br>
                     <h3>Precio</h3>
                     <label for="my-range">Price Range:</label>
-                    <input type="range" rangeInput.min=0 rangeInput.max=1000 name="price" id="my-range">
-                    <p id="currentInput"></p>
+
+                    <div>
+                        <input type="range" name="price" id="my-range">
+                        <p id="mostrarValor">$0</p>
+                    </div>
+
                 </div>
             </aside>
 
@@ -177,7 +206,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="../app.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
