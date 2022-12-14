@@ -1,11 +1,11 @@
 const contenedorOfertas = document.querySelector("#contenedor__ofertas")
 
 // Renderizar productos en oferta
-fetch('productos.json')
+fetch('../productos.json')
     .then(response => response.json())
-    .then((temas) => {
+    .then((productos) => {
 
-        mostrarOfertas(temas)
+        mostrarOfertas(productos)
 
     });
 
