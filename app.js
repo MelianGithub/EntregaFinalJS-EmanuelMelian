@@ -6,16 +6,18 @@ fetch('../productos.json')
     const botonesCategorias = document.querySelectorAll(".botones__categorias");
     const selectOrder = document.querySelector("#selectOrder");
     const priceMax = document.querySelector("#my-range");
-    const linkLaptop = document.querySelector("#linkLaptop")
-    const currentInput = document.querySelector("#my-range")
+    const currentInput = document.querySelector("#my-range");
+    
 
+
+    // Mostrar el valor precio del input filterPrecio
     currentInput.addEventListener("click", () => {
       mostrarValor.innerHTML = '';
       mostrarValor.append("$" + currentInput.value)
 
     })
 
-
+    // Renderizar productos
     function cargarProductos(arraryProductos) {
       filtercard__container.innerHTML = '';
       for (const producto of arraryProductos) {
@@ -32,7 +34,7 @@ fetch('../productos.json')
                 <p class = "text__card"></p>
                 <h4>$${producto.precio}</h4>
                 <button class= "producto-agregar" id="${producto.id}">${unidades}</button>
-  `;
+                `;
         filtercard__container.append(mostrarProductos);
       }
       actualizarBotonesAgregar();
@@ -134,9 +136,22 @@ fetch('../productos.json')
               producto.cat === e.currentTarget.id ||
               producto.marca === e.currentTarget.id
           );
-          cargarProductos(buscados);
-          ordenadoPor(buscados);
-          filtrarPrecio(buscados);
+
+          const checkboxElement = e.currentTarget;
+          if (e.currentTarget.id == "todos__productos") {
+            cargarProductos(productos);
+            uncheckOther(checkboxElement)
+
+          } else {
+
+            if (checkboxElement.checked === true) {
+
+              cargarProductos(buscados);
+              ordenadoPor(buscados);
+              filtrarPrecio(buscados);
+              uncheckOther(checkboxElement)
+            }
+          }
         });
       });
     }
@@ -180,6 +195,20 @@ fetch('../productos.json')
     ordenadoPor(productos);
     buscarCat(productos);
 
-  })
+    function uncheckOther(selected) {
+      // Obtener todos los checkboxes en un array
+      var checks = document.querySelectorAll('input[type=checkbox]');
+
+      // Recorrer el array de checkboxes y desmarcar todos excepto el seleccionado
+      for (var i = 0; i < checks.length; i++) {
+        if (checks[i] != selected) {
+          checks[i].checked = false;
+        }
+      }
+    }
+
+
+  });
+
 
 

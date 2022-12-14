@@ -291,6 +291,20 @@ i {
     }
 }
 
+.contenedor__productos_oferta{
+
+
+
+
+adad
+
+
+
+
+
+
+}
+
 .contenedor__tresfotos {
     width: 100%;
     display: flex;
@@ -418,6 +432,9 @@ footer {
     justify-content: space-between;
 }
 
+.botoFiltro{
+    padding-right: 40px;
+}
 
 /* Carrito */
 

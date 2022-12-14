@@ -11,7 +11,8 @@
         "precio": 2000,
         "stock": 5,
         "descripcion": "Super Gaming Pc perfecta para jugar todos los juegos de pc del momento",
-        "img": "../imagenes/laptoplenovo1.jpg"
+        "img": "../imagenes/laptoplenovo1.jpg",
+        "oferta": true
     },
     {
         "cat": "laptop",
@@ -25,7 +26,8 @@
         "precio": 1200,
         "stock": 5,
         "descripcion": "Super Gaming Pc perfecta para jugar todos los juegos de pc del momento",
-        "img": "../imagenes/laptoplenovo1.jpg"
+        "img": "../imagenes/laptoplenovo1.jpg",
+        "oferta": true
     },
     {
         "cat": "laptop",
@@ -39,7 +41,8 @@
         "precio": 1050,
         "stock": 5,
         "descripcion": "Super Gaming Pc perfecta para jugar todos los juegos de pc del momento",
-        "img": "../imagenes/laptop23.jpg"
+        "img": "../imagenes/laptop23.jpg",
+        "oferta": false
     },
     {
         "cat": "laptop",
@@ -53,7 +56,8 @@
         "precio": 3000,
         "stock": 10,
         "descripcion": "Super Gaming Pc perfecta para jugar todos los juegos de pc del momento",
-        "img": "../imagenes/laptop23.jpg"
+        "img": "../imagenes/laptop23.jpg",
+        "oferta": true
     },
     {
         "cat": "laptop",
@@ -67,7 +71,8 @@
         "precio": 1400,
         "stock": 2,
         "descripcion": "Super Gaming Pc perfecta para jugar todos los juegos de pc del momento",
-        "img": "../imagenes/laptoplenovo1.jpg"
+        "img": "../imagenes/laptoplenovo1.jpg",
+        "oferta": false
     },
     {
         "cat": "laptop",
@@ -81,7 +86,8 @@
         "precio": 7000,
         "stock": 5,
         "descripcion": "Super Gaming Pc perfecta para jugar todos los juegos de pc del momento",
-        "img": "../imagenes/laptoplenovo1.jpg"
+        "img": "../imagenes/laptoplenovo1.jpg",
+        "oferta": false
     },
     {
         "cat": "laptop",
@@ -95,7 +101,8 @@
         "precio": 800,
         "stock": 0,
         "descripcion": "Super Gaming Pc perfecta para jugar todos los juegos de pc del momento",
-        "img": "../imagenes/laptoplenovo1.jpg"
+        "img": "../imagenes/laptoplenovo1.jpg",
+        "oferta": false
     },
     {
         "cat": "laptop",
@@ -109,7 +116,8 @@
         "precio": 1100,
         "stock": 0,
         "descripcion": "Super Gaming Pc perfecta para jugar todos los juegos de pc del momento",
-        "img": "../imagenes/laptoplenovo1.jpg"
+        "img": "../imagenes/laptoplenovo1.jpg",
+        "oferta": false
     },
     {
         "cat": "laptop",
@@ -123,7 +131,8 @@
         "precio": 500,
         "stock": 0,
         "descripcion": "Super Gaming Pc perfecta para jugar todos los juegos de pc del momento",
-        "img": "../imagenes/laptoplenovo1.jpg"
+        "img": "../imagenes/laptoplenovo1.jpg",
+        "oferta": false
     },
     {
         "cat": "laptop",
@@ -137,7 +146,8 @@
         "precio": 2500,
         "stock": 1,
         "descripcion": "Super Gaming Pc perfecta para jugar todos los juegos de pc del momento",
-        "img": "../imagenes/laptoplenovo1.jpg"
+        "img": "../imagenes/laptoplenovo1.jpg",
+        "oferta": false
     },
     {
         "cat": "laptop",
@@ -151,7 +161,8 @@
         "precio": 2600,
         "stock": 4,
         "descripcion": "Super Gaming Pc perfecta para jugar todos los juegos de pc del momento",
-        "img": "../imagenes/laptoplenovo1.jpg"
+        "img": "../imagenes/laptoplenovo1.jpg",
+        "oferta": false
     },
     {
         "cat": "laptop",
@@ -165,7 +176,8 @@
         "precio": 900,
         "stock": 1,
         "descripcion": "Super Gaming Pc perfecta para jugar todos los juegos de pc del momento",
-        "img": "../imagenes/laptoplenovo1.jpg"
+        "img": "../imagenes/laptoplenovo1.jpg",
+        "oferta": false
     },
     {
         "cat": "monitor",
@@ -176,6 +188,7 @@
         "stock": 4,
         "descripcion": "Disfrutá de una experiencia totalmente inmersiva con el nuevo monitor Samsung con pantalla LED curva Full HD de 24’’",
         "img": "../imagenes/monitorSamsung.jpg",
+        "oferta": false,
         "cpu": "N/A"
     },
     {
@@ -187,7 +200,8 @@
         "stock": 4,
         "descripcion": "Con su diseño sin bordes, este monitor te brinda la mejor experiencia de juego.",
         "img": "../imagenes/monitorLG.jpg",
-        "cpu": "N/A"
+        "cpu": "N/A",
+        "oferta": true
     },
     {
         "cat": "monitor",
@@ -198,7 +212,8 @@
         "stock": 4,
         "descripcion": "Con su diseño sin bordes, este monitor te brinda la mejor experiencia de juego.",
         "img": "../imagenes/monitorxiaomi.jpg",
-        "cpu": "N/A"
+        "cpu": "N/A",
+        "oferta": false
     },
     {
         "cat": "monitor",
@@ -209,7 +224,8 @@
         "stock": 4,
         "descripcion": "Con su diseño sin bordes, este monitor te brinda la mejor experiencia de juego.",
         "img": "../imagenes/monitorJVC.jpg",
-        "cpu": "N/A"
+        "cpu": "N/A",
+        "oferta": false
     },    
     {
         "cat": "grafica",
@@ -220,7 +236,8 @@
         "stock": 3,
         "descripcion": "Ideal para gaming",
         "img": "../imagenes/nvidiartx2060.jpg",
-        "cpu": "N/A"
+        "cpu": "N/A",
+        "oferta": true
     },
     {
         "cat": "grafica",
@@ -231,7 +248,8 @@
         "stock": 4,
         "descripcion": "Ideal para gaming",
         "img": "../imagenes/nvidia3.jpg",
-        "cpu": "N/A"
+        "cpu": "N/A",
+        "oferta": false
     },
     {
         "cat": "grafica",
@@ -242,7 +260,8 @@
         "stock": 1,
         "descripcion": "Ideal para gaming",
         "img": "../imagenes/nvidia.jpg",
-        "cpu": "N/A"
+        "cpu": "N/A",
+        "oferta": false
     },
     {
         "cat": "grafica",
@@ -253,7 +272,8 @@
         "stock": 1,
         "descripcion": "Ideal para gaming",
         "img": "../imagenes/Radeonrx560.jpg",
-        "cpu": "N/A"
+        "cpu": "N/A",
+        "oferta": false
     },
     {
         "cat": "grafica",
@@ -264,7 +284,8 @@
         "stock": 6,
         "descripcion": "Ideal para gaming",
         "img": "../imagenes/Radeonrx550.jpg",
-        "cpu": "N/A"
+        "cpu": "N/A",
+        "oferta": false
     },
     {
         "cat": "grafica",
@@ -275,7 +296,8 @@
         "stock": 12,
         "descripcion": "Ideal para gaming",
         "img": "../imagenes/Radeonrx550.jpg",
-        "cpu": "N/A"
+        "cpu": "N/A",
+        "oferta": true
     },
   
     {
@@ -287,7 +309,8 @@
         "stock": 7,
         "descripcion": "Teclado Rgba",
         "img": "../imagenes/teclado.jpg",
-        "cpu": "N/A"
+        "cpu": "N/A",
+        "oferta": true
     },
     {
         "cat": "accesorios",
@@ -298,7 +321,8 @@
         "stock": 7,
         "descripcion": "Auriculares",
         "img": "../imagenes/auriculares.jpg",
-        "cpu": "N/A"
+        "cpu": "N/A",
+        "oferta": false
     },
     {
         "cat": "accesorios",
@@ -308,6 +332,7 @@
         "stock": 7,
         "descripcion": "Mouse gamer",
         "img": "../imagenes/mouse.jpg",
-        "cpu": "N/A"
+        "cpu": "N/A",
+        "oferta": true
     }
 ]
