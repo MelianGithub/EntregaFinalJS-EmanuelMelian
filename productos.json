@@ -39,7 +39,7 @@
         "precio": 1050,
         "stock": 5,
         "descripcion": "Super Gaming Pc perfecta para jugar todos los juegos de pc del momento",
-        "img": "../imagenes/laptoplenovo1.jpg"
+        "img": "../imagenes/laptop23.jpg"
     },
     {
         "cat": "laptop",
@@ -53,7 +53,7 @@
         "precio": 3000,
         "stock": 10,
         "descripcion": "Super Gaming Pc perfecta para jugar todos los juegos de pc del momento",
-        "img": "../imagenes/laptoplenovo1.jpg"
+        "img": "../imagenes/laptop23.jpg"
     },
     {
         "cat": "laptop",
@@ -280,32 +280,34 @@
   
     {
         "cat": "accesorios",
-        "id": 10,
-        "marca": "RADEON",
+        "nombre": "teclado",
+        "id": 14,
+        "marca": "XtrikeMe",
         "precio": 40,
         "stock": 7,
-        "descripcion": "conector HDMI",
-        "img": ".jpg",
+        "descripcion": "Teclado Rgba",
+        "img": "../imagenes/teclado.jpg",
+        "cpu": "N/A"
+    },
+    {
+        "cat": "accesorios",
+        "nombre": "auriculares",
+        "id": 10,
+        "marca": "Xtreme",
+        "precio": 40,
+        "stock": 7,
+        "descripcion": "Auriculares",
+        "img": "../imagenes/auriculares.jpg",
         "cpu": "N/A"
     },
     {
         "cat": "accesorios",
         "id": 10,
-        "marca": "RADEON",
+        "marca": "XR",
         "precio": 40,
         "stock": 7,
-        "descripcion": "conector HDMI",
-        "img": ".jpg",
-        "cpu": "N/A"
-    },
-    {
-        "cat": "accesorios",
-        "id": 10,
-        "marca": "RADEON",
-        "precio": 40,
-        "stock": 7,
-        "descripcion": "conector HDMI",
-        "img": ".jpg",
+        "descripcion": "Mouse gamer",
+        "img": "../imagenes/mouse.jpg",
         "cpu": "N/A"
     }
 ]

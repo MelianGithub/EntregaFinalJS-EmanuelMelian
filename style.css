@@ -84,15 +84,15 @@ i {
     color: white;
 }
 
-.menu__desplegable{
+.menu__desplegable {
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    
+
 }
 
-.menu__desplegable>li{
+.menu__desplegable>li {
     padding: 10px;
 }
 
@@ -102,7 +102,7 @@ i {
     color: #fff;
 }
 
-.menu__desplegable li:hover{
+.menu__desplegable li:hover {
     background-color: #7d96ae;
 }
 
@@ -126,8 +126,8 @@ i {
     color: white;
     padding: 10px;
     background-color: #003E77;
-    
-    
+
+
 }
 
 .menu__vertical li a:hover {
@@ -381,7 +381,7 @@ footer {
 
 .menu__filter li {
     list-style: none;
-    
+
 }
 
 .menu__filter li:hover {
@@ -457,6 +457,7 @@ footer {
 .seguir__comprando {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 80%;
     margin: 0 auto;
     padding-bottom: 10px;
@@ -464,6 +465,13 @@ footer {
 
 .seguir__comprando button {
     background-color: #003E77;
+    color: #EEEEEE;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#contenedorTotal {
+    background-color: #003e77d8;
     color: #EEEEEE;
     padding: 10px;
     font-weight: bold;
