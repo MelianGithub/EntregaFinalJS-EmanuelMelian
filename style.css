@@ -106,36 +106,6 @@ i {
     background-color: #7d96ae;
 }
 
-.menu__vertical {
-    position: absolute;
-    z-index: 1;
-    display: none;
-    list-style: none;
-    width: 200px;
-    color: black;
-    margin-top: 10px;
-    margin-left: -10px;
-}
-
-.menu__desplegable li:hover .menu__vertical {
-    display: block;
-}
-
-.menu__vertical li a {
-    display: block;
-    color: white;
-    padding: 10px;
-    background-color: #003E77;
-
-
-}
-
-.menu__vertical li a:hover {
-    background-color: #bbb;
-    color: white;
-}
-
-
 
 /* Contenido main */
 .main__container {

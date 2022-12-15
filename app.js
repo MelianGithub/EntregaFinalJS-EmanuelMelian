@@ -58,6 +58,8 @@ fetch('../productos.json')
           producto.cpu.toLowerCase() == buscarItem.value.toLowerCase()
       })
       buscar.length > 0 ? cargarProductos(buscar) : error(); // ESTO ES LO MISMO QUE UN IF ELSE
+      filtrarPrecio(buscar)
+      ordenadoPor(buscar);
     }
 
     // AGREGAR AL CARRITO
