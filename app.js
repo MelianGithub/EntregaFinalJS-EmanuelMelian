@@ -7,8 +7,14 @@ fetch('../productos.json')
     const selectOrder = document.querySelector("#selectOrder");
     const priceMax = document.querySelector("#my-range");
     const currentInput = document.querySelector("#my-range");
-    
+    const numerito = document.querySelector("span")
 
+    // Numero de Carrito
+
+    function actualizarNumerito() {
+      let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+      numerito.innerText = nuevoNumerito;
+    }
 
     // Mostrar el valor precio del input filterPrecio
     currentInput.addEventListener("click", () => {
@@ -90,12 +96,7 @@ fetch('../productos.json')
       localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
     }
 
-    // Numero de Carrito
-    const numerito = document.querySelector("#numerito")
-    function actualizarNumerito() {
-      let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
-      numerito.innerText = nuevoNumerito;
-    }
+
 
     // Productos en carrito
     let productosEnCarrito;

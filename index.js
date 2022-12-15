@@ -26,11 +26,11 @@ function cargarOfertas(arrayProductos) {
   <h3>${producto.marca}</h3>
   <p class = "text__card"></p>
   <h4>$${producto.precio}</h4>
-  <button class= "producto-agregar" id="${producto.id}">${unidades}</button>
+  <h5>En Oferta<h5>
 `;
         contenedorOfertas.append(ofertas);
     }
-    actualizarBotonesAgregar();
+    
 }
 
 function mostrarOfertas(array) {
@@ -39,6 +39,5 @@ function mostrarOfertas(array) {
             return producto.oferta === true;
         })
 
-    enOferta.length > 0 ? cargarOfertas(enOferta) : alert("no")
+    enOferta.length > 0 ? cargarOfertas(enOferta) : error();
 }
-

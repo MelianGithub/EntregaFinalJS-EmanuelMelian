@@ -453,7 +453,7 @@ footer {
 .subtitulos__carrito {
     background-color: #7d96ae;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
     border: 1px solid black;
     align-items: center;
