@@ -49,13 +49,33 @@ fetch('../productos.json')
 
     // funcion buscar
     const buscarItem = document.querySelector("#buscar");
+    
     buscarItem.addEventListener("change", buscadorItem);
 
-    function buscadorItem() {
+
+    const search = window.location.search.split('=')[1];
+    if (search) {
+      buscarItem.setAttribute('value', search);
       let buscar = productos.filter((producto) => {
         return producto.marca.toLowerCase() == buscarItem.value.toLowerCase() ||
           producto.cat.toLowerCase() == buscarItem.value.toLowerCase() ||
           producto.cpu.toLowerCase() == buscarItem.value.toLowerCase()
+      })
+      buscar.length > 0 ? cargarProductos(buscar) : error(); // ESTO ES LO MISMO QUE UN IF ELSE
+      filtrarPrecio(buscar)
+      ordenadoPor(buscar);
+    }
+    
+    function buscadorItem() {
+      const value = buscarItem.value.toLowerCase();
+      if (window.location.pathname === '/index.html') {
+        window.location.href = `/paginas/productos.html?search=${value}`
+        return;
+      }
+      let buscar = productos.filter((producto) => {
+        return producto.marca.toLowerCase() == value ||
+          producto.cat.toLowerCase() == value ||
+          producto.cpu.toLowerCase() == value
       })
       buscar.length > 0 ? cargarProductos(buscar) : error(); // ESTO ES LO MISMO QUE UN IF ELSE
       filtrarPrecio(buscar)
